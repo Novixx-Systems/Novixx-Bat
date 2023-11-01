@@ -108,7 +108,7 @@ namespace Novixx_Bat
                         {
                             if (args[1] == "equ")
                             {
-                                if (args[0] == args[2])
+                                if (ParseVars(args[0]) == ParseVars(args[2]))
                                 {
                                     // Execute the command
                                     Execute(string.Join(" ", args.Skip(3)));
